@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LiveS_project</string>
+    <string name="map">Map</string>
+    <string name="daily">Daily</string>
+    <string name="tasks">tasks</string>
+    <string name="about">About</string>
+    <string name="lives">LiveS</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

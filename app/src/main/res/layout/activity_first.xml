@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/first_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+
+    <ImageView
+        android:id="@+id/world_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="130dp"
+        app:srcCompat="@drawable/world" />
+
+    <TextView
+        android:id="@+id/first_lives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/world_image"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/changa_one"
+        android:text="@string/lives"
+        android:shadowColor="@color/black"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="2"
+        android:textColor="@color/sky_blue"
+        android:textSize="60dp" />
+</RelativeLayout>
