@@ -6,127 +6,28 @@
     android:layout_height="match_parent"
     android:background="@color/sky_blue">
 
-    <TextView
-        android:id="@+id/how_to_act_textview"
-        android:layout_width="225dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/changa_one"
-        android:text="How to act?"
-        android:textColor="@color/blue"
-        android:shadowColor="@color/black"
-        android:shadowDx="3"
-        android:shadowDy="3"
-        android:shadowRadius="2"
-        android:textSize="35dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.561"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/natural_disasters_textview"
-        android:layout_width="170dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="150dp"
-        android:fontFamily="@font/changa_one"
-        android:shadowColor="@color/black"
-        android:shadowDx="1"
-        android:shadowDy="1"
-        android:shadowRadius="1"
-        android:text="natural disasters"
-        android:textColor="@color/blue"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/lessons_fragment_container"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/animal_attack_textview"
-        android:layout_width="170dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="150dp"
-        android:fontFamily="@font/changa_one"
-        android:shadowColor="@color/black"
-        android:shadowDx="1"
-        android:shadowDy="1"
-        android:shadowRadius="1"
-        android:text="animal's attack"
-        android:textColor="@color/blue"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/lessons_fragment_container"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/other_textview"
-        android:layout_width="170dp"
-        android:layout_height="30dp"
-        android:layout_marginBottom="25dp"
-        android:fontFamily="@font/changa_one"
-        android:shadowColor="@color/black"
-        android:shadowDx="1"
-        android:shadowDy="1"
-        android:shadowRadius="1"
-        android:text="other"
-        android:textColor="@color/blue"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/lessons_fragment_container"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.726"
-        app:layout_constraintStart_toStartOf="parent"
-       />
-
-    <ImageView
-        android:id="@+id/girl_maniac_image"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="220dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/girl_maniac_image" />
-
-    <ImageView
-        android:id="@+id/boy_ruins_image"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.075"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.309"
-        app:srcCompat="@drawable/kid_ruins" />
-
-    <ImageView
-        android:id="@+id/woman_dog_image"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.309"
-        app:srcCompat="@drawable/woman_dog" />
 
     <FrameLayout
-        android:id="@+id/lessons_fragment_container"
+        android:id="@+id/lessons_fragment2_container"
+        android:layout_width="380dp"
+        android:layout_height="459dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.257">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/lessons_fragment1_container"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         tools:layout_editor_absoluteX="-15dp">
-
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
