@@ -41,4 +41,5 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation ("com.google.android.gms:play-services-maps:18.1.0")
     implementation("com.airbnb.android:lottie:3.7.0")
+    implementation ("com.google.android.gms:play-services-location:20.0.0")
 }

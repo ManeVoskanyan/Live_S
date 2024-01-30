@@ -20,10 +20,8 @@ public class FirstActivity extends AppCompatActivity {
         setContentView(R.layout.activity_first);
         first_lives = findViewById(R.id.first_lives);
         lottie = findViewById(R.id.lottie);
-        first_lives.animate().translationY(-1000).setDuration(0).setStartDelay(1000);
-        lottie.animate().translationX(2000).setDuration(0).setStartDelay(3000);
-        first_lives.animate().alpha(0).scaleX(1.5f).scaleY(1.5f).setDuration(3000).setStartDelay(900);
-        lottie.animate().translationX(2000).setDuration(2000).setStartDelay(2500);
+        first_lives.animate().alpha(0).translationY(-1000).setDuration(1400).setStartDelay(2500);
+        lottie.animate().alpha(0).translationX(2000).setDuration(2000).setStartDelay(2500);
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
