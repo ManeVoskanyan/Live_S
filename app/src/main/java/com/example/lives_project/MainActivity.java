@@ -74,6 +74,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             MarkerOptions options = new MarkerOptions().position(sydney).title("My Location");
             options.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
             myMap.addMarker(options);
+            myMap.getUiSettings().setZoomControlsEnabled(true);
+            myMap.getUiSettings().setCompassEnabled(true);
         }
 
         @Override
