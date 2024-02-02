@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             myMap.addMarker(options);
             myMap.getUiSettings().setZoomControlsEnabled(true);
             myMap.getUiSettings().setCompassEnabled(true);
+            myMap.getUiSettings().setZoomGesturesEnabled(false);
         }
 
         @Override
