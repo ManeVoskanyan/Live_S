@@ -21,7 +21,6 @@
             android:id="@+id/home_image"
             android:layout_width="80dp"
             android:layout_height="45dp"
-            android:layout_marginHorizontal="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             app:srcCompat="@drawable/home" />
@@ -30,10 +29,9 @@
             android:id="@+id/lessons_image"
             android:layout_width="80dp"
             android:layout_height="45dp"
-            android:layout_marginStart="-25dp"
             android:layout_marginTop="5dp"
-            android:layout_marginEnd="85dp"
             android:layout_marginBottom="5dp"
+            android:layout_marginStart="-10dp"
             android:clickable="true"
             android:onClick="onLessonsClick"
             app:srcCompat="@drawable/lessons"
@@ -44,19 +42,18 @@
             android:id="@+id/compass_image"
             android:layout_width="80dp"
             android:layout_height="45dp"
-            android:layout_marginStart="20dp"
             android:layout_marginTop="5dp"
-            android:layout_marginEnd="-20dp"
             android:layout_marginBottom="5dp"
+            android:layout_marginStart="90dp"
             app:srcCompat="@drawable/compass1" />
 
         <ImageView
             android:id="@+id/settings_image"
             android:layout_width="80dp"
             android:layout_height="45dp"
-            android:layout_marginHorizontal="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
+            android:layout_marginStart="-15dp"
             app:srcCompat="@drawable/settings1" />
 
 
@@ -65,9 +62,11 @@
     <RelativeLayout
         android:id="@+id/top_Relative_layout"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="match_parent"
         android:layout_above="@+id/main_btn1"
-        android:layout_marginBottom="320dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="330dp"
         android:background="@color/blue">
 
         <fragment
@@ -77,8 +76,10 @@
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="-1dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
             tools:context=".MapsActivity" />
 
 

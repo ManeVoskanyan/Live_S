@@ -44,8 +44,26 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map_google);
+        if ( mapFragment != null){
+            mapFragment.getMapAsync(new OnMapReadyCallback() {
+                @Override
+                public void onMapReady(@NonNull GoogleMap googleMap) {
+                    googleMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+                        @Override
+                        public void onMapClick(@NonNull LatLng latLng) {
+                            openFullscreenMapActivity();
+                        }
+                    });
+                }
+            });
+        }
         getLastLocation();
 
+    }
+    private void openFullscreenMapActivity(){
+        Intent intent = new Intent(this, FullscreenMapActivity.class);
+        startActivity(intent);
     }
 
     private void getLastLocation() {
