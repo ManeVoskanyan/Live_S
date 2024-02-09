@@ -1,6 +1,6 @@
 package com.example.lives_project;
 
-import android.app.Activity;
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -12,29 +12,32 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-public class LessonsMenuFragment extends Fragment {
+public class AnimalMenuFragment extends Fragment {
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-   View view = inflater.inflate(R.layout.fragment_lessons_menu, container, false);
-        ImageView woman_dog_image = view.findViewById(R.id.woman_dog_image);
-        woman_dog_image.setOnClickListener(new View.OnClickListener() {
+        View view = inflater.inflate(R.layout.fragment_animal_menu, container, false);
+         ImageView dogs_image  = view.findViewById(R.id.dogs_image);
+        dogs_image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onImageClick();
             }
         });
 
-  return  view;
+        return  view;
     }
+
+
 
     public  void onImageClick(){
         FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.lessons_fragment2_container, new AnimalMenuFragment());
+        fragmentTransaction.replace(R.id.lessons_fragment2_container, new DogsLessonsFragment());
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
 
     }
+
 }

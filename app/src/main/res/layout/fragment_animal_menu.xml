@@ -6,20 +6,21 @@
     android:layout_height="match_parent"
     android:background="@color/sky_blue">
 
+
     <TextView
-        android:id="@+id/how_to_act_textview"
+        android:id="@+id/animals_attack_textview"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="30dp"
         android:fontFamily="@font/changa_one"
         android:shadowColor="@color/black"
         android:shadowDx="3"
         android:shadowDy="3"
         android:shadowRadius="2"
-        android:text="How to act during"
+        android:text="Animals attacks"
         android:textColor="@color/blue"
         android:textSize="35dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,23 +28,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <TextView
-        android:id="@+id/animal_attack_textview"
-        android:layout_width="188dp"
-        android:layout_height="51dp"
-        android:layout_below="@+id/how_to_act_textview"
+        android:id="@+id/snakes_textview"
+        android:layout_width="86dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/animals_attack_textview"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="220dp"
-        android:layout_marginEnd="200dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="268dp"
         android:fontFamily="@font/changa_one"
         android:shadowColor="@color/black"
         android:shadowDx="1"
         android:shadowDy="1"
         android:shadowRadius="1"
-        android:text="natural disasters"
+        android:text="snakes"
         android:textColor="@color/blue"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,21 +53,21 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/natural_disasters_textview"
-        android:layout_width="204dp"
-        android:layout_height="54dp"
-        android:layout_below="@+id/how_to_act_textview"
+        android:id="@+id/dogs_textview"
+        android:layout_width="73dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/animals_attack_textview"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="224dp"
-        android:layout_marginTop="220dp"
-        android:layout_marginEnd="-17dp"
+        android:layout_marginStart="281dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="56dp"
         android:fontFamily="@font/changa_one"
         android:shadowColor="@color/black"
         android:shadowDx="1"
         android:shadowDy="1"
         android:shadowRadius="1"
-        android:text="animals attacks"
+        android:text="dogs"
         android:textColor="@color/blue"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,21 +77,21 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/dangerous_situations_textview"
-        android:layout_width="221dp"
-        android:layout_height="42dp"
-        android:layout_below="@+id/how_to_act_textview"
+        android:id="@+id/bears_textview"
+        android:layout_width="89dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/animals_attack_textview"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="434dp"
-        android:layout_marginEnd="85dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="432dp"
+        android:layout_marginEnd="158dp"
         android:fontFamily="@font/changa_one"
         android:shadowColor="@color/black"
         android:shadowDx="1"
         android:shadowDy="1"
         android:shadowRadius="1"
-        android:text="dangerous situations"
+        android:text="bears"
         android:textColor="@color/blue"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,7 +101,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/woman_dog_image"
+        android:id="@+id/dogs_image"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_alignParentStart="true"
@@ -116,28 +116,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.309"
-        app:srcCompat="@drawable/initial_bg_menu" />
+        app:srcCompat="@drawable/initial_animal_menu" />
 
     <ImageView
-        android:id="@+id/girl_maniac_image"
+        android:id="@+id/bears_image"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="130dp"
-        android:layout_marginTop="370dp"
-        android:layout_marginEnd="130dp"
+        android:layout_marginTop="371dp"
+        android:layout_marginEnd="129dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.309"
-        app:srcCompat="@drawable/initial_bg_menu" />
+        app:srcCompat="@drawable/initial_animal_menu" />
 
     <ImageView
-        android:id="@+id/kid_ruins_image"
+        android:id="@+id/snakes_image"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_alignParentStart="true"
@@ -152,7 +152,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.309"
-        app:srcCompat="@drawable/initial_bg_menu" />
+        app:srcCompat="@drawable/initial_animal_menu" />
 
 
 </RelativeLayout>

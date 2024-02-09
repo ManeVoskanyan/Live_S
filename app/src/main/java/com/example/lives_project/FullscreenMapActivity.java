@@ -20,6 +20,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import android.view.View;
 import android.widget.SearchView;
+import android.widget.Toast;
 
 import java.io.IOException;
 import java.util.List;
@@ -28,7 +29,6 @@ public class FullscreenMapActivity  extends AppCompatActivity implements OnMapRe
 
                     private GoogleMap myMap;
                     private SearchView mapSearchView;
-
 
                     protected void onCreate(Bundle savedInstanceState) {
                         super.onCreate(savedInstanceState);
@@ -70,12 +70,11 @@ public class FullscreenMapActivity  extends AppCompatActivity implements OnMapRe
                         }
 
                     }
+            @Override
+            public void onMapReady(@NonNull GoogleMap googleMap) {
+             myMap = googleMap;
 
-                    @Override
-                    public void onMapReady(@NonNull GoogleMap googleMap) {
-                        myMap = googleMap;
-
-                    }
+            }
 
                     public void onLessonsClick(View v) {
                         Intent intent = new Intent(FullscreenMapActivity.this, LessonsActivity.class);
