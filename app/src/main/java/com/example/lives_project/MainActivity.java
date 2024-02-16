@@ -88,9 +88,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         public void onMapReady (@NonNull GoogleMap googleMap){
             myMap = googleMap;
             LatLng sydney = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
-            myMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
             MarkerOptions options = new MarkerOptions().position(sydney).title("My Location");
             options.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
+            myMap.animateCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15));
             myMap.addMarker(options);
             myMap.getUiSettings().setZoomControlsEnabled(true);
             myMap.getUiSettings().setCompassEnabled(true);

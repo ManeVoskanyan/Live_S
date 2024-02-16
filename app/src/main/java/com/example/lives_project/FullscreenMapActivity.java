@@ -76,9 +76,10 @@ public class FullscreenMapActivity  extends AppCompatActivity implements OnMapRe
 
             }
 
-                    public void onLessonsClick(View v) {
-                        Intent intent = new Intent(FullscreenMapActivity.this, LessonsActivity.class);
-                        startActivity(intent);
-                    }
+    public void onLessonsClick(View v) {
+        Intent intent = new Intent(FullscreenMapActivity.this, LessonsActivity.class);
+        startActivity(intent);
+    }
+
                 }
 

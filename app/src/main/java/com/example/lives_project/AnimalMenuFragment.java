@@ -18,7 +18,7 @@ public class AnimalMenuFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_animal_menu, container, false);
-         ImageView dogs_image  = view.findViewById(R.id.dogs_image);
+         ImageView dogs_image  = view.findViewById(R.id.dog_image_bg);
         dogs_image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

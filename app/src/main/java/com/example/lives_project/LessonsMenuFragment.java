@@ -18,7 +18,7 @@ public class LessonsMenuFragment extends Fragment {
                              Bundle savedInstanceState) {
 
    View view = inflater.inflate(R.layout.fragment_lessons_menu, container, false);
-        ImageView woman_dog_image = view.findViewById(R.id.woman_dog_image);
+        ImageView woman_dog_image = view.findViewById(R.id.girl_dog_bg);
         woman_dog_image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
